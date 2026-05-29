@@ -97,87 +97,30 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-3">
-              <div className="bg-card p-8 rounded-2xl shadow-lg border border-gray-100">
-                <h2 className="font-serif text-2xl font-bold text-primary mb-2">
-                  Send Us a Message
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  Fill out the form below and we'll get back to you as soon as possible.
-                </p>
+<div className="lg:col-span-3">
+  <div className="bg-card p-8 rounded-2xl shadow-lg border border-gray-100">
+    
+    <h2 className="font-serif text-2xl font-bold text-primary mb-2">
+      Send Us a Message
+    </h2>
 
-                <form className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">Full Name</label>
-                      <input
-                        id="name"
-                        type="text"
-                        placeholder="John Doe"
-                        className="w-full border border-gray-200 rounded-xl p-4 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">Phone Number</label>
-                      <input
-                        id="phone"
-                        type="tel"
-                        placeholder="(713) 555-0000"
-                        className="w-full border border-gray-200 rounded-xl p-4 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all"
-                      />
-                    </div>
-                  </div>
+    <p className="text-muted-foreground mb-6">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">Email Address</label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="john@example.com"
-                      className="w-full border border-gray-200 rounded-xl p-4 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all"
-                    />
-                  </div>
+    {/* Jotform Embed */}
+    <div className="w-full h-[800px]">
+      <iframe
+        src="https://form.jotform.com/261485366819066"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+      />
+    </div>
 
-                  <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-primary mb-2">Service Interested In</label>
-                    <select
-                      id="service"
-                      className="w-full border border-gray-200 rounded-xl p-4 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all bg-white"
-                    >
-                      <option value="">Select a service...</option>
-                  <option value="individual">Physchosocial Rehabilitation (PSR)</option>
-                  <option value="family">Adult Behavioral Health Services</option>
-                  <option value="child">Child & Adolescent Services</option>
-                  <option value="school">School Advocacy and IEP/504 Assistance</option>
-                  <option value="iep">Mental Health Skills Training (MHS/TCM)</option>
-                  <option value="assessment">Behavioral Health Assessment</option>
-                  <option value="other">Other / Not Sure</option>
-                </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">How Can We Help?</label>
-                    <textarea
-                      id="message"
-                      placeholder="Tell us a bit about what you're looking for..."
-                      rows={5}
-                      className="w-full border border-gray-200 rounded-xl p-4 focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all resize-none"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl"
-                  >
-                    Send Message
-                  </button>
-
-                  <p className="text-xs text-center text-muted-foreground">
-                    By submitting this form, you agree to our privacy policy.
-                  </p>
-                </form>
-              </div>
-            </div>
+  </div>
+</div>
 
           </div>
         </div>

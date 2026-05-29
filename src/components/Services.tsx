@@ -12,7 +12,7 @@ import Link from 'next/link'
 const services = [
   {
     icon: Heart,
-    title: 'Physchosocial Rehabilitation (PSR)',
+    title: 'Pyschosocial Rehabilitation (PSR)',
     description: 'Collaborative, recovery-oriented approach for individuals with severe or persistent mental illnesses. Its primary goal is to help individuals develop the emotional, cognitive, and social skills necessary to live, work, and thrive as independently as possible in their communitie',
     color: 'bg-secondary/10 text-secondary'
   },

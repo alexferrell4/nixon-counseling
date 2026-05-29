@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 30 41 59;
+    --primary: 30 58 95;
+    --primary-light: 45 74 111;
+    --secondary: 13 148 136;
+    --secondary-light: 20 184 166;
+    --accent: 16 185 129;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --card: 255 255 255;
+    --card-foreground: 30 41 59;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-slate-800 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(13, 148, 136, 0.2);
+    color: rgb(30, 58, 95);
+  }
+}
+
+@layer utilities {
+  .bg-primary { background-color: rgb(30 58 95); }
+  .bg-primary-light { background-color: rgb(45 74 111); }
+  .bg-secondary { background-color: rgb(13 148 136); }
+  .bg-secondary-light { background-color: rgb(20 184 166); }
+  .bg-accent { background-color: rgb(16 185 129); }
+  .bg-muted { background-color: rgb(241 245 249); }
+  .bg-card { background-color: rgb(255 255 255); }
+  
+  .text-primary { color: rgb(30 58 95); }
+  .text-primary-light { color: rgb(45 74 111); }
+  .text-secondary { color: rgb(13 148 136); }
+  .text-secondary-light { color: rgb(20 184 166); }
+  .text-accent { color: rgb(16 185 129); }
+  .text-foreground { color: rgb(30 41 59); }
+  .text-muted-foreground { color: rgb(100 116 139); }
+  .text-card-foreground { color: rgb(30 41 59); }
+  
+  .border-primary { border-color: rgb(26, 60, 104); }
+  .border-secondary { border-color: rgb(13 148 136); }
+  
+  .from-primary { --tw-gradient-from: rgb(30 58 95); }
+  .from-primary-light { --tw-gradient-from: rgb(45 74 111); }
+  .via-primary { --tw-gradient-stops: var(--tw-gradient-from), rgb(30 58 95), var(--tw-gradient-to); }
+  .via-primary-light { --tw-gradient-stops: var(--tw-gradient-from), rgb(45 74 111), var(--tw-gradient-to); }
+  .to-primary { --tw-gradient-to: rgb(30 58 95); }
+  .to-secondary { --tw-gradient-to: rgb(13 148 136); }
+  
+  .hover\:bg-secondary-light:hover { background-color: rgb(20 184 166); }
+  .hover\:text-secondary:hover { color: rgb(13 148 136); }
+  .hover\:text-secondary-light:hover { color: rgb(20 184 166); }
+  
+  .bg-secondary\/10 { background-color: rgba(13, 148, 136, 0.1); }
+  .bg-secondary\/20 { background-color: rgba(13, 148, 136, 0.2); }
+  .bg-secondary\/30 { background-color: rgba(13, 148, 136, 0.3); }
+  .bg-primary\/10 { background-color: rgba(30, 58, 95, 0.1); }
+  .bg-accent\/10 { background-color: rgba(16, 185, 129, 0.1); }
+  
+  .group:hover .group-hover\:bg-secondary { background-color: rgb(13 148 136); }
+  .group:hover .group-hover\:text-white { color: rgb(255 255 255); }
+  .group:hover .group-hover\:scale-110 { transform: scale(1.1); }
+}

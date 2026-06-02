@@ -56,7 +56,7 @@ export default function AboutPage() {
               <div className="absolute -top-4 -right-4 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
               <div className="relative bg-muted p-8 rounded-2xl">
                 <img 
-                  src="/about-family.jpg" 
+                  src="/about-family.png" 
                   alt="Family counseling session"
                   className="rounded-xl shadow-lg w-full aspect-[4/3] object-cover"
                 />

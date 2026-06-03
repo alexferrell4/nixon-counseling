@@ -35,7 +35,7 @@ export default function Footer() {
                 <MapPin size={18} className="mt-0.5 shrink-0" />
                 <span>3719 Lynnfield St.<br />Houston, TX 77016</span>
               </div>
-              <a href="mailto:info@nixoncounseling.com" className="flex items-center gap-3 text-white/80 hover:text-secondary-light transition-colors">
+              <a href="mailto:tpersley.nixoncounseling@gmail.com" className="flex items-center gap-3 text-white/80 hover:text-secondary-light transition-colors">
                 <Mail size={18} />
                 tpersley.nixoncounseling@gmail.com 
               </a>

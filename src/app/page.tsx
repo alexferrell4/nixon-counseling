@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Values from '@/components/Values'
+import AffiliatedServices from '@/components/AffiliatedServices'
 import CTA from '@/components/CTA'
 
 export default function Home() {
@@ -27,6 +28,8 @@ export default function Home() {
       <Values />
 
       <Services />
+
+      <AffiliatedServices />
 
       <CTA />
     </main>
